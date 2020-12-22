@@ -1,0 +1,28 @@
+{
+  "name": "hot_restaraunt",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "watch": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mariohernandezk10/hot_restaraunt.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mariohernandezk10/hot_restaraunt/issues"
+  },
+  "homepage": "https://github.com/mariohernandezk10/hot_restaraunt#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "ig": "^0.0.5",
+    "nodemon": "^2.0.6"
+  }
+}
