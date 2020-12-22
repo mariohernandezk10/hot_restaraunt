@@ -14,6 +14,9 @@ app.use(express.urlencoded({
 }));
 app.use(express.json());
 
+require("/Routes/api.js");
+require("/Routes/html.js");
+
 // Star Wars Characters (DATA)
 // =============================================================
 var characters = [{
@@ -54,11 +57,15 @@ var characters = [{
 
 // Basic route that sends the user first to the AJAX Page
 app.get("/", function (req, res) {
-    res.sendFile(path.join(__dirname, "view.html"));
+    res.sendFile(path.join(__dirname, "main.html"));
 });
 
-app.get("/add", function (req, res) {
-    res.sendFile(path.join(__dirname, "add.html"));
+app.get("/tables", function (req, res) {
+    res.sendFile(path.join(__dirname, "tables.html"));
+});
+
+app.get("/formPage", function (req, res) {
+    res.sendFile(path.join(__dirname, "formPage.html"));
 });
 
 // Displays all characters
@@ -118,3 +125,4 @@ app.post("/api/characters", function (req, res) {
 app.listen(PORT, function () {
     console.log("App listening on PORT " + PORT);
 });
+
