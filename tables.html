@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hot Restaurant - Tables</title>
+  <!-- Latest compiled and minified CSS & JS -->
+  <link rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="jumbotron" style="text-align:center">
+      <h1>Hot Restaurant</h1>
+      <h3>Current Reservations and Waiting List</h3>
+      <hr>
+      <a href="/api/characters"><button class="btn btn-danger btn-lg"><span
+            class="fa fa-credit-card"></span> Make Reservation</button></a>
+        <a href="/add"><button class="btn btn-secondary btn-lg"><span class="fa fa-home"></span></button></a>
+    </div>
+  </div>
+
+  <div class="container border border-3 rounded" style="margin-bottom: 3rem;">
+    <div class="col-12 p-3"><strong>Current Reservations</strong></div>
+    <div class="row border border-light rounded p-3">
+      <div class="col-1 p-3 bg-light">
+          <h2 style="text-align:center; color:white" class="bg-primary rounded">#</h2>
+
+          </div>
+      <div class="col-11 p-3 bg-light">
+        <h2 style="text-align:left;">Name</h2>
+    </div>
+    </div>
+  </div>
+
+  <div class="container border border-3 rounded">
+    <div class="col-12 p-3"><strong>Waiting List</strong></div>
+    <div class="row border border-light rounded p-3">
+      <div class="col-1 p-3 bg-light">
+          <h2 style="text-align:center; color:white" class="bg-primary rounded">#</h2>
+
+          </div>
+      <div class="col-11 p-3 bg-light">
+        <h2 style="text-align:left;">Name</h2>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
